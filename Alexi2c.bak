@@ -615,11 +615,11 @@ Text Notes 7500 3550 0    60   ~ 0
 Text Notes 7500 3550 0    60   ~ 0
 6- 6m/LNA    Penny Out 6
 Text Notes 7500 3650 0    60   ~ 0
-7- LNA Off     Penny Out 7
+7- T/R Off     Penny Out 7
 Text Notes 7500 3750 0    60   ~ 0
-8_              0x22 Att 1
+8_               Att 1
 Text Notes 7500 4350 0    60   ~ 0
- 9- 30/20m     0x22 Att2
+ 9- 30/20m     Att 2
 Text Notes 7500 4450 0    60   ~ 0
 10- 60/40m     RX in 1
 Text Notes 7500 4550 0    60   ~ 0
