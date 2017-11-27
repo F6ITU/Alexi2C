@@ -1,5 +1,6 @@
 # Alexi2C
 
+Kicad files
 
 I2C control board for 
 Alexiares/Penelope output filter set 
@@ -35,7 +36,7 @@ or any external voltage when opened.
 
 For hams using this board with the KF7O's Hermes Lite, two connectors 
 have been added to directly control the drivers in decimal mode
-to control a Penelope, Alexiares or an Alex SV1AN softrock based 
+to control a Penelope, Alexiares or an Alex SV1AL softrock based 
 "Big Mobo" filter set ( or any filter 
 board using negative logic band switching) 
 

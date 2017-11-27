@@ -52,7 +52,7 @@ U 1 1 59CE41A3
 P 4600 4150
 F 0 "U2" H 4150 5100 50  0000 C CNN
 F 1 "TCA9555PWR" H 4600 4150 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-24W_7.5x15.4mm_Pitch1.27mm" H 5650 3150 50  0001 C CNN
+F 2 "Housings_SSOP:TSSOP-24_4.4x7.8mm_Pitch0.65mm" H 5650 3150 50  0001 C CNN
 F 3 "" H 4100 5050 50  0001 C CNN
 	1    4600 4150
 	1    0    0    -1  
@@ -675,17 +675,6 @@ Text Notes 8200 7650 0    60   ~ 0
 Text Notes 7400 7500 0    60   ~ 0
 Red Pitaya I/O interface (I2C) for Alexiares & Penelope filter set\n
 $Comp
-L Conn_02x03_Counter_Clockwise J2
-U 1 1 59F8B716
-P 3050 4850
-F 0 "J2" H 3100 5050 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 3100 4650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 3050 4850 50  0001 C CNN
-F 3 "" H 3050 4850 50  0001 C CNN
-	1    3050 4850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Conn_01x01 J7
 U 1 1 59F97D13
 P 2600 2550
@@ -987,4 +976,16 @@ F 3 "" H 3050 3350 50  0001 C CNN
 	1    3050 3350
 	-1   0    0    1   
 $EndComp
+$Comp
+L Conn_02x03_Odd_Even J2
+U 1 1 5A171BE9
+P 3050 4850
+F 0 "J2" H 3100 5050 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 3100 4650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 3050 4850 50  0001 C CNN
+F 3 "" H 3050 4850 50  0001 C CNN
+	1    3050 4850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3900 3550
 $EndSCHEMATC
