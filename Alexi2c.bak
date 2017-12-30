@@ -60,12 +60,12 @@ $EndComp
 $Comp
 L GND #PWR01
 U 1 1 59CE4270
-P 3650 3250
-F 0 "#PWR01" H 3650 3000 50  0001 C CNN
-F 1 "GND" H 3650 3100 50  0000 C CNN
-F 2 "" H 3650 3250 50  0001 C CNN
-F 3 "" H 3650 3250 50  0001 C CNN
-	1    3650 3250
+P 2800 3250
+F 0 "#PWR01" H 2800 3000 50  0001 C CNN
+F 1 "GND" H 2800 3250 50  0000 C CNN
+F 2 "" H 2800 3250 50  0001 C CNN
+F 3 "" H 2800 3250 50  0001 C CNN
+	1    2800 3250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -292,14 +292,12 @@ Text Notes 2350 5750 0    60   ~ 0
 12V In
 Text Notes 3000 5250 0    60   ~ 0
 Addr\nselect
-Text Notes 2450 3450 1    60   ~ 0
+Text Notes 2100 3400 1    60   ~ 0
 I2C \nInput
 Wire Wire Line
 	2750 3450 3900 3450
 Wire Wire Line
 	2750 3350 3900 3350
-Wire Wire Line
-	2750 3250 3650 3250
 Wire Wire Line
 	3350 4950 3900 4950
 Wire Wire Line
@@ -439,17 +437,6 @@ Wire Wire Line
 	7200 3950 7200 4000
 Wire Wire Line
 	2950 5750 2950 5800
-$Comp
-L L7805 U1
-U 1 1 59CE7A6C
-P 3000 3950
-F 0 "U1" H 3000 3950 50  0000 C CNN
-F 1 "78M05" H 3100 3700 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:TO-252-2" H 3025 3800 50  0001 L CIN
-F 3 "" H 3000 3900 50  0001 C CNN
-	1    3000 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 3050 4600 3050
 Connection ~ 4500 3050
@@ -457,19 +444,10 @@ Wire Wire Line
 	3250 3050 3250 3150
 Connection ~ 4200 3050
 Wire Wire Line
-	3300 3950 3450 3950
-Wire Wire Line
 	3450 3050 3450 4600
 Connection ~ 3450 3050
 Wire Wire Line
 	3450 4600 2850 4600
-Connection ~ 3450 3950
-Wire Wire Line
-	2700 3950 2700 5350
-Wire Wire Line
-	2700 5350 3300 5350
-Wire Wire Line
-	3300 5350 3300 5650
 $Comp
 L C C4
 U 1 1 59CE7EEE
@@ -518,67 +496,6 @@ Wire Wire Line
 	3800 3850 3750 3850
 Wire Wire Line
 	3800 3650 3750 3650
-$Comp
-L C C1
-U 1 1 59CE846C
-P 2550 4100
-F 0 "C1" H 2575 4200 50  0000 L CNN
-F 1 "100n" H 2250 4100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2588 3950 50  0001 C CNN
-F 3 "" H 2550 4100 50  0001 C CNN
-	1    2550 4100
-	0    -1   1    0   
-$EndComp
-$Comp
-L GND #PWR015
-U 1 1 59CE8472
-P 2350 4100
-F 0 "#PWR015" H 2350 3850 50  0001 C CNN
-F 1 "GND" H 2350 3950 50  0000 C CNN
-F 2 "" H 2350 4100 50  0001 C CNN
-F 3 "" H 2350 4100 50  0001 C CNN
-	1    2350 4100
-	0    1    -1   0   
-$EndComp
-$Comp
-L C C2
-U 1 1 59CE8478
-P 2550 4300
-F 0 "C2" H 2575 4400 50  0000 L CNN
-F 1 "1u" H 2650 4300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2588 4150 50  0001 C CNN
-F 3 "" H 2550 4300 50  0001 C CNN
-	1    2550 4300
-	0    -1   1    0   
-$EndComp
-$Comp
-L GND #PWR016
-U 1 1 59CE847E
-P 2350 4300
-F 0 "#PWR016" H 2350 4050 50  0001 C CNN
-F 1 "GND" H 2350 4150 50  0000 C CNN
-F 2 "" H 2350 4300 50  0001 C CNN
-F 3 "" H 2350 4300 50  0001 C CNN
-	1    2350 4300
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	2350 4100 2400 4100
-Wire Wire Line
-	2350 4300 2400 4300
-$Comp
-L GND #PWR017
-U 1 1 59CE89E9
-P 3000 4350
-F 0 "#PWR017" H 3000 4100 50  0001 C CNN
-F 1 "GND" H 3000 4200 50  0000 C CNN
-F 2 "" H 3000 4350 50  0001 C CNN
-F 3 "" H 3000 4350 50  0001 C CNN
-	1    3000 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 4250 3000 4350
 Text Notes 7200 7200 0    79   ~ 0
 I2C interface \nAlexiares/Penelope/Red Pitaya/Hermes Lite\n\nF6ITU\n\n
 $Comp
@@ -594,11 +511,11 @@ F 3 "" H 4500 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 3800 5050 3850
-Text Notes 3300 3350 0    60   ~ 0
+Text Notes 2300 3400 0    60   ~ 0
 SDA\n
-Text Notes 3300 3450 0    60   ~ 0
+Text Notes 2300 3500 0    60   ~ 0
 SCL\n
-Text Notes 3300 3250 0    60   ~ 0
+Text Notes 2300 3300 0    60   ~ 0
 GND\n
 Text Notes 3300 3050 0    60   ~ 0
 Vcc 5V
@@ -635,11 +552,11 @@ Text Notes 7500 4950 0    60   ~ 0
 Text Notes 7500 5050 0    60   ~ 0
 16
 Text Notes 7500 3900 0    60   ~ 0
-12Vcc
+Com+
 Text Notes 7500 4000 0    60   ~ 0
 Gnd\n
 Text Notes 7500 5200 0    60   ~ 0
-12Vcc
+Com+
 Text Notes 7500 5300 0    60   ~ 0
 Gnd\n
 Text Notes 7700 2950 0    60   ~ 0
@@ -907,12 +824,9 @@ Wire Wire Line
 	6650 6300 3700 6300
 Wire Wire Line
 	3700 6300 3700 5650
-Connection ~ 3300 5650
 Connection ~ 6650 6050
 Text Notes 7600 6250 1    60   ~ 0
 ULN com. pwr
-Connection ~ 2700 4300
-Connection ~ 2700 4100
 Connection ~ 3450 3850
 Connection ~ 3450 3650
 $Comp
@@ -985,16 +899,15 @@ F 3 "" H 3050 4850 50  0001 C CNN
 	1    3050 4850
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3900 3550
 Wire Wire Line
 	3700 5650 3300 5650
 $Comp
-L D D?
+L D D1
 U 1 1 5A350050
 P 3150 5650
-F 0 "D?" H 3150 5750 50  0000 C CNN
+F 0 "D1" H 3150 5750 50  0000 C CNN
 F 1 "D" H 3150 5550 50  0000 C CNN
-F 2 "" H 3150 5650 50  0001 C CNN
+F 2 "Diodes_SMD:D_2010" H 3150 5650 50  0001 C CNN
 F 3 "" H 3150 5650 50  0001 C CNN
 	1    3150 5650
 	-1   0    0    1   
@@ -1002,10 +915,10 @@ $EndComp
 Wire Wire Line
 	2950 5650 3000 5650
 $Comp
-L R R?
+L R R4
 U 1 1 5A3CF7F2
 P 3000 3150
-F 0 "R?" V 3080 3150 50  0000 C CNN
+F 0 "R4" V 3080 3150 50  0000 C CNN
 F 1 "0R" V 3000 3150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 2930 3150 50  0001 C CNN
 F 3 "" H 3000 3150 50  0001 C CNN
@@ -1017,53 +930,47 @@ Wire Wire Line
 Wire Wire Line
 	2850 3150 2750 3150
 $Comp
-L R R?
+L R R5
 U 1 1 5A3D00FE
-P 3050 3500
-F 0 "R?" V 3130 3500 50  0000 C CNN
-F 1 "4k7" V 3050 3500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2980 3500 50  0001 C CNN
-F 3 "" H 3050 3500 50  0001 C CNN
-	1    3050 3500
-	1    0    0    -1  
+P 3200 3300
+F 0 "R5" V 3280 3300 50  0000 C CNN
+F 1 "4k7" V 3200 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3130 3300 50  0001 C CNN
+F 3 "" H 3200 3300 50  0001 C CNN
+	1    3200 3300
+	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR?
-U 1 1 5A3D0104
-P 3050 3700
-F 0 "#PWR?" H 3050 3450 50  0001 C CNN
-F 1 "GND" H 2950 3700 50  0000 C CNN
-F 2 "" H 3050 3700 50  0001 C CNN
-F 3 "" H 3050 3700 50  0001 C CNN
-	1    3050 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
+L R R6
 U 1 1 5A3D03AB
-P 3250 3600
-F 0 "R?" V 3330 3600 50  0000 C CNN
-F 1 "4k7" V 3250 3600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3180 3600 50  0001 C CNN
-F 3 "" H 3250 3600 50  0001 C CNN
-	1    3250 3600
+P 3350 3200
+F 0 "R6" V 3430 3200 50  0000 C CNN
+F 1 "4k7" V 3350 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3280 3200 50  0001 C CNN
+F 3 "" H 3350 3200 50  0001 C CNN
+	1    3350 3200
 	1    0    0    -1  
 $EndComp
+Connection ~ 3200 3450
+Connection ~ 3200 3150
+Connection ~ 3350 3050
+Connection ~ 3350 3350
+Wire Wire Line
+	2800 3250 2750 3250
 $Comp
-L GND #PWR?
-U 1 1 5A3D03B1
-P 3250 3800
-F 0 "#PWR?" H 3250 3550 50  0001 C CNN
-F 1 "GND" H 3350 3750 50  0000 C CNN
-F 2 "" H 3250 3800 50  0001 C CNN
-F 3 "" H 3250 3800 50  0001 C CNN
-	1    3250 3800
+L R R7
+U 1 1 5A43DEEC
+P 3800 3400
+F 0 "R7" V 3880 3400 50  0000 C CNN
+F 1 "4k7" V 3800 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3730 3400 50  0001 C CNN
+F 3 "" H 3800 3400 50  0001 C CNN
+	1    3800 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 3650 3050 3700
-Connection ~ 3050 3350
-Connection ~ 3250 3450
+	3900 3550 3800 3550
 Wire Wire Line
-	3250 3750 3250 3800
+	3800 3250 3800 3050
+Connection ~ 3800 3050
 $EndSCHEMATC
