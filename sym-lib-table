@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Alexi2c-rescue)(type Legacy)(uri ${KIPRJMOD}/Alexi2c-rescue.lib)(options "")(descr ""))
+)
